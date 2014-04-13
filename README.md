@@ -6,7 +6,7 @@ An HTML5 widget for dot rating, to be used in tabletop roleplaying games based o
 Examples
 ========
 
-You can see some basic examples live [here](https://dl.dropboxusercontent.com/u/62860879/Storytelling%20System%20-%20HTML5%20Dot%20Component/demo.html).
+You can see some basic examples live [here](https://dl.dropboxusercontent.com/u/62860879/Storytelling%20System%20-%20HTML5%20Dot%20Component/example.html).
 
 Using the widget
 ======================
@@ -27,7 +27,7 @@ Create a span element with the ss-dot-rating class, give values to the data-dot-
 Call .DotRating() on it for initialization:
 
 ```js
-$("#Dexterity").slider();
+$("#Dexterity").DotRating();
 ```
 
 Now you can get the value using jQuery like this:

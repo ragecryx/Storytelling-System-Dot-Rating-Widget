@@ -1,7 +1,7 @@
 Storytelling-System-Dot-Rating-Widget
 =====================================
 
-An HTML5 widget for dot rating, to be used in tabletop roleplaying games based on the Storytelling System (e.g. World of Darkness, Vampire the Masquerade etc). Uses jQuery 1.11.0
+An HTML5 widget for dot rating that is used in tabletop roleplaying games based on the Storytelling System (e.g. World of Darkness, Vampire the Masquerade etc). Uses jQuery.
 
 Examples
 ========
@@ -44,4 +44,4 @@ The data-dot-* attributes
 | data-dot-title | string | The title of the attribute/skill this rating represents. |
 | data-dot-max | number | The maximum number of dots this rating has. |
 | data-dot-min | number | The minimum number of dots this rating has. |
-| data-dot-value | number | The default value of tje attribute/skill |
+| data-dot-value | number | The default value of the attribute/skill |

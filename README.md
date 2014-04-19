@@ -45,3 +45,4 @@ The data-dot-* attributes
 | data-dot-max | number | The maximum number of dots this rating has. |
 | data-dot-min | number | The minimum number of dots this rating has. |
 | data-dot-value | number | The default value of the attribute/skill |
+| data-dot-is-squared | boolean | If the value is "true" the dot will appear squared and be marked with X |

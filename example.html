@@ -3,12 +3,23 @@
 	<head>
         <title>Storytelling System - Dot Rating Widget</title>
         <meta charset="UTF-8">
+        <link href='http://fonts.googleapis.com/css?family=Medula+One' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
         <link rel='stylesheet' href='ssdot.css' type='text/css' />
         <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
         <script src="ssdot.js"></script>
+        <style>
+            h3 { font-family: 'Medula One', cursive;
+                 font-size: 36px;
+                 font-weight: 100; }
+            em { font-family: 'Special Elite', cursive;
+                 font-size: 18px;
+                 font-weight: 100; 
+                 font-style: normal; }
+        </style>
     </head>
-	<body>
-        <h3>Storytelling System Dot Rating Widget Demo</h3>
+	<body style="background-color: lightgrey;">
+        <h3 style="">Storytelling System Dot Rating Widget Demo</h3>
         <br />
         <em>Basic Attribute Example (Minimum of 1 dot)</em>
         <br />
@@ -25,11 +36,19 @@
         <span id="Vicissitude" class="ss-dot-rating" data-dot-title="Vicissitude" data-dot-max="10" data-dot-min="0" data-dot-value="6"></span>
         <br />
         <br />
-        <button onclick="alert($('#Vicissitude').data('dot-value'));">Test</button>
+        <button onclick="alert($('#Vicissitude').data('dot-value'));">How many dots is my Vicissitude?</button>
+        <br />
+        <br />
+        <em>Squared</em>
+        <br />
+        <span id="Willpower" class="ss-dot-rating" data-dot-title="Willpower" data-dot-max="10" data-dot-min="0" data-dot-value="6" data-dot-is-squared="true"></span>
+        <br />
+        <br />
         <script>
             $("#Manipulation").DotRating();
             $("#Athletics").DotRating();
             $("#Vicissitude").DotRating();
+            $("#Willpower").DotRating();
         </script>
     </body>
 </html>

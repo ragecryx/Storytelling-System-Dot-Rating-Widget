@@ -28,3 +28,12 @@
     -webkit-box-shadow: 0 0 0.2em rgba(0, 0, 0, 0.75); 
     -moz-box-shadow: 0 0 0.2em rgba(0, 0, 0, 0.75);
 }
+
+.ss-dot-xmark {
+    background-color: white;
+    background-image: url(xmark.svg);
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-size: cover;
+    background-clip: border-box;
+}

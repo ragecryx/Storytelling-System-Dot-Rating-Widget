@@ -9,18 +9,22 @@
             element.children(".ss-dot").removeClass("ss-dot-xmark");
             if (value > element.data("dot-min")) {
                 element.children(".ss-dot").slice(0, value).addClass("ss-dot-xmark");
+                element.children(".ss-dot:nth-child(5n)").css("margin-right","0.6em");
                 element.data("dot-value", value);
             } else {
                 element.children(".ss-dot").slice(0, element.data("dot-min")).addClass("ss-dot-xmark");
+                element.children(".ss-dot:nth-child(5n)").css("margin-right","0.6em");
                 element.data("dot-value", element.data("dot-min"));
             }
         } else {
             element.children(".ss-dot").css("background-color", "white");
             if (value > element.data("dot-min")) {
                 element.children(".ss-dot").slice(0, value).css("background-color", "black");
+                element.children(".ss-dot:nth-child(5n)").css("margin-right","0.6em");
                 element.data("dot-value", value);
             } else {
                 element.children(".ss-dot").slice(0, element.data("dot-min")).css("background-color", "black");
+                element.children(".ss-dot:nth-child(5n)").css("margin-right","0.6em");
                 element.data("dot-value", element.data("dot-min"));
             }
         }

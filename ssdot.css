@@ -1,4 +1,4 @@
-/* Storytelling System Dot Rating Widget v1.0 */
+/* Storytelling System Dot Rating Widget v1.1 */
 
 .ss-dot-rating:before {
     content: attr(data-dot-title);

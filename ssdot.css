@@ -23,17 +23,29 @@
     background-color: white;
 }
 
+.ss-dot:nth-child(5n) {
+    margin-right: 0.6em;
+}
+
+.ss-dot-marked {
+    background-color: black;
+}
+
 .ss-dot:hover {
     box-shadow: 0 0 0.2em rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: 0 0 0.2em rgba(0, 0, 0, 0.75); 
+    -webkit-box-shadow: 0 0 0.2em rgba(0, 0, 0, 0.75);
     -moz-box-shadow: 0 0 0.2em rgba(0, 0, 0, 0.75);
 }
 
 .ss-dot-xmark {
+    border-radius: 0em;
     background-color: white;
-    background-image: url(xmark.svg);
     background-repeat: no-repeat;
     background-origin: border-box;
     background-size: cover;
     background-clip: border-box;
+}
+
+.ss-dot-xmark.ss-dot-marked {
+    background-image: url(xmark.svg);
 }

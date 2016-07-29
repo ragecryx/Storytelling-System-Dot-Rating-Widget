@@ -5,7 +5,7 @@
 (function ($) {
     "use strict";
 
-    
+
     function SetDotRating(element, value) {
         element.children(".ss-dot").removeClass("ss-dot-marked");
 
@@ -56,7 +56,7 @@
     // After the page finished loading, detect and
     // initialize all dot rating components.
     $(document).ready(function () {
-        $(".ss-dot-rating").each(function(){
+        $("ss-rating").each(function(){
             InitDotRating($(this));
         });
     });

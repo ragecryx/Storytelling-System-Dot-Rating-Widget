@@ -18,10 +18,10 @@ Include the stylesheet and javascript file in the head section of your page:
 <script src="ssdot.js"></script>
 ```
 
-Create an ss-rating element with the ss-dot-rating class, give values to the data-dot-* attributes:
+Create an ss-rating and give values to the data-dot-* attributes:
 
 ```html
-<ss-rating id="Dexterity" class="ss-dot-rating" data-dot-title="Dexterity" data-dot-max="5" data-dot-min="1" data-dot-value="3"></ss-rating>
+<ss-rating id="Dexterity" data-dot-title="Dexterity" data-dot-max="5" data-dot-min="1" data-dot-value="3"></ss-rating>
 ```
 
 Now you can get the value using jQuery like this:

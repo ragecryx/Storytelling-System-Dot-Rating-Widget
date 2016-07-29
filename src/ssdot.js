@@ -1,5 +1,6 @@
 /* ============================================
- * Storytelling System Dot Rating Widget v1.1
+ * Storytelling System Dot Rating Widget v1.2
+ * Licensed under the MIT license.
  * ========================================= */
 
 (function ($) {

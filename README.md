@@ -1,6 +1,8 @@
 Storytelling-System-Dot-Rating-Widget
 =====================================
 
+## Current Version 1.2
+
 An HTML5 widget for dot rating that is used in tabletop roleplaying games based on the Storytelling System (e.g. World of Darkness, Vampire the Masquerade etc). Uses jQuery.
 
 Examples

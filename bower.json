@@ -1,0 +1,32 @@
+{
+  "name": "ssratingwidget",
+  "homepage": "https://github.com/ragecryx/Storytelling-System-Dot-Rating-Widget",
+  "authors": [
+    "George Koutsikos (ragecryx@gmail.com)"
+  ],
+  "description": "An HTML5 widget for dot ratings. Used in tabletop roleplaying games like Vampire the Masquerade.",
+  "main": [
+    "./src/ssdot.js",
+    "./src/ssdot.css"
+  ],
+  "keywords": [
+    "rpg",
+    "wod",
+    "cofd",
+    "vtm",
+    "vampire",
+    "masquerade",
+    "vtr"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": ">= 1.11.0"
+  }
+}

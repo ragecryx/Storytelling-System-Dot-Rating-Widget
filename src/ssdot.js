@@ -9,24 +9,30 @@
     function SetDotRating(element, value) {
         element.children(".ss-dot").removeClass("ss-dot-marked");
 
-        if(element.data("dot-color-empty")) {
-          element.children(".ss-dot").css("background-color", element.data("dot-color-empty"));
-        }
-
-        if(element.data("dot-color-border")) {
-          element.children(".ss-dot").css("border-color", element.data("dot-color-border"));
-        }
-
-        if(element.data("dot-color-marked")) {
-          element.children(".ss-dot").slice(0, value).css("background-color", element.data("dot-color-marked"));
-        }
-
+        // Set new values
         if (value > element.data("dot-min")) {
             element.children(".ss-dot").slice(0, value).addClass("ss-dot-marked");
             element.data("dot-value", value);
         } else {
             element.children(".ss-dot").slice(0, element.data("dot-min")).addClass("ss-dot-marked");
             element.data("dot-value", element.data("dot-min"));
+        }
+
+        // Set styles on newly marked dots (ss-dots)
+
+        if(element.data("dot-color-border")) {
+            // Set the border to all dots
+            element.children(".ss-dot").css("border-color", element.data("dot-color-border"));
+        }
+
+        if(element.data("dot-color-empty")) {
+            // Set the color to all dots who are not marked (are empty)
+            element.children(".ss-dot:not(.ss-dot-marked)").css("background-color", element.data("dot-color-empty"));
+        }
+
+        if(element.data("dot-color-marked")) {
+            // Set the color to all dots who are marked
+            element.children(".ss-dot.ss-dot-marked").slice(0, value).css("background-color", element.data("dot-color-marked"));
         }
     }
 

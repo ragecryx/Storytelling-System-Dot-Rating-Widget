@@ -4,6 +4,8 @@
 
 (function ($) {
     "use strict";
+
+    
     function SetDotRating(element, value) {
         element.children(".ss-dot").removeClass("ss-dot-marked");
 
@@ -27,6 +29,7 @@
             element.data("dot-value", element.data("dot-min"));
         }
     }
+
 
     function InitDotRating(element) {
         var max, value;
@@ -54,7 +57,6 @@
     // initialize all dot rating components.
     $(document).ready(function () {
         $(".ss-dot-rating").each(function(){
-            console.log($(this).data("dot-title"));
             InitDotRating($(this));
         });
     });

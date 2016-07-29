@@ -28,25 +28,35 @@
         }
     }
 
-    $.fn.DotRating = function () {
+    function InitDotRating(element) {
         var max, value;
-        max = this.data("dot-max");
-        value = this.data("dot-value");
+        max = element.data("dot-max");
+        value = element.data("dot-value");
 
-        this.html((new Array(max + 1)).join("<div class='ss-dot'></div>"));
-        SetDotRating(this, value);
-        if (this.data("dot-is-squared") === true) {
-            this.children(".ss-dot").addClass("ss-dot-xmark");
+        element.html((new Array(max + 1)).join("<div class='ss-dot'></div>"));
+        SetDotRating(element, value);
+        if (element.data("dot-is-squared") === true) {
+            element.children(".ss-dot").addClass("ss-dot-xmark");
         }
 
-        this.click(function (e) {
+        element.click(function (e) {
             var target = $(e.target);
-            if (target.attr("id") !== $(this).attr("id")) {
-                SetDotRating($(this), $(this).children(".ss-dot").index(target) + 1);
+            if (target.attr("id") !== $(element).attr("id")) {
+                SetDotRating($(element), $(element).children(".ss-dot").index(target) + 1);
             } else {
-                SetDotRating($(this), 0);
+                SetDotRating($(element), 0);
             }
         });
     };
+
+
+    // After the page finished loading, detect and
+    // initialize all dot rating components.
+    $(document).ready(function () {
+        $(".ss-dot-rating").each(function(){
+            console.log($(this).data("dot-title"));
+            InitDotRating($(this));
+        });
+    });
 
 })(window.jQuery);

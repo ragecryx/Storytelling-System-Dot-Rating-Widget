@@ -1,7 +1,7 @@
 Storytelling-System-Dot-Rating-Widget
 =====================================
 
-## Current Version 1.2
+## Current Version 1.2.1
 
 An HTML5 widget for dot rating that is used in tabletop roleplaying games based on the Storytelling System (e.g. World of Darkness, Vampire the Masquerade etc). Uses jQuery.
 
@@ -31,6 +31,8 @@ Now you can get the value using jQuery like this:
 ```js
 $("#Dexterity").data("dot-value");
 ```
+
+** From 1.2.1 the title and the dots adjust on the width of the __ss-rating__ element, title sticking to the left and dots as far right as they can. If you want to change this try changing the __.ss-title__ and __.ss-dots__ css classes. **
 
 The data-dot-* attributes
 ======================

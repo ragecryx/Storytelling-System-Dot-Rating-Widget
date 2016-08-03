@@ -1,10 +1,22 @@
-/* Storytelling System Dot Rating Widget v1.1 */
+/* Storytelling System Dot Rating Widget v1.2.1 */
 
-ss-rating:before {
-    content: attr(data-dot-title);
+ss-rating {
+    display: block;
+    max-width: 20em;
+    padding: 0.1em 0.2em;
+}
+
+.ss-title {
+    display: inline-block;
     vertical-align: middle;
-    margin-left: 0.2em;
-    margin-right: 0.2em;
+    margin: 0px;
+    padding: 0px;
+}
+
+.ss-dots {
+    display: inline-block;
+    float: right;
+    margin: 0px;
     padding: 0px;
 }
 
@@ -23,6 +35,7 @@ ss-rating:before {
     background-color: white;
 }
 
+/* Every 5 child elements... */
 .ss-dot:nth-child(5n) {
     margin-right: 0.6em;
 }

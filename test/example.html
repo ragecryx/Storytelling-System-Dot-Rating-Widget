@@ -16,6 +16,12 @@
                  font-size: 18px;
                  font-weight: 100;
                  font-style: normal; }
+			.divToAlignTo {
+				width: 250px;
+				border-color: #A32222;
+				border-style: solid;
+				border-width: medium;
+			}
         </style>
     </head>
 	<body style="background-color: lightgrey;">
@@ -49,5 +55,11 @@
         <ss-rating id="Health" data-dot-title="Health" data-dot-max="12" data-dot-min="0" data-dot-value="6" data-dot-color-empty="#330000" data-dot-color-marked="#aa0000"></ss-rating>
         <br />
         <br />
+		<em>Aligned Ratings</em>
+		<div class="divToAlignTo">
+			<ss-rating id="Strength" data-dot-title="Strength" data-dot-max="5" data-dot-min="1" data-dot-value="3"></ss-rating>
+			<ss-rating id="Dexterity" data-dot-title="Dexterity" data-dot-max="5" data-dot-min="1" data-dot-value="1"></ss-rating>
+			<ss-rating id="Intelligence" data-dot-title="Intelligence" data-dot-max="5" data-dot-min="1" data-dot-value="2"></ss-rating>
+		</div>
     </body>
 </html>

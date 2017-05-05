@@ -37,13 +37,13 @@ __From version 1.2.1__ the title and the dots adjust on the width of the ss-rati
 The data-dot-* attributes
 ======================
 
-| Attribute | Type |	Description |
-| ---- |:----:|:-------:|:----------- |
-| data-dot-title | string | The title of the attribute/skill this rating represents. |
-| data-dot-max | number | The maximum number of dots this rating has. |
-| data-dot-min | number | The minimum number of dots this rating has. |
-| data-dot-value | number | The default value of the attribute/skill |
-| data-dot-is-squared | boolean | If the value is "true" the dot will appear squared and be marked with X |
-| data-dot-color-empty | html color | Sets the color of the dot when its empty. |
-| data-dot-color-marked | html color | Sets the color of the dot when its marked. |
-| data-dot-color-border | html color | Sets the color of the dot's border. |
+| Attribute             | Type       |	Description                                                            |
+| --------------------- | :--------: | :---------------------------------------------------------------------- |
+| data-dot-title        | string     | The title of the attribute/skill this rating represents.                |
+| data-dot-max          | number     | The maximum number of dots this rating has.                             |
+| data-dot-min          | number     | The minimum number of dots this rating has.                             |
+| data-dot-value        | number     | The default value of the attribute/skill                                |
+| data-dot-is-squared   | boolean    | If the value is "true" the dot will appear squared and be marked with X |
+| data-dot-color-empty  | html color | Sets the color of the dot when its empty.                               |
+| data-dot-color-marked | html color | Sets the color of the dot when its marked.                              |
+| data-dot-color-border | html color | Sets the color of the dot's border.                                     |

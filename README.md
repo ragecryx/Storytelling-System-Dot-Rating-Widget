@@ -8,7 +8,7 @@ An HTML5 widget for dot rating that is used in tabletop roleplaying games based 
 Examples
 ========
 
-You can see some basic examples live [here](https://dl.dropboxusercontent.com/u/62860879/Storytelling%20System%20-%20HTML5%20Dot%20Component/example.html).
+You can see some basic examples live [here](http://ragecryx.github.io/Storytelling-System-Dot-Rating-Widget/test/example).
 
 Using the widget
 ======================
